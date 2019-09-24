@@ -10,6 +10,9 @@ export function iteratorArray(iteration) {
    * Return this array Iterator
    *
    */
+  let iterator = new Set;
+  iterator.add("1").add("dois").add("3").add("4").add("5");
+  return iterator;
 }
 
 /**
@@ -24,6 +27,10 @@ export function iteratorObject(name, lastName) {
    * Create an object iterator with key = name and value = lastName
    * Return this object Iterator
    */
+  const object = new Map;
+  object.set(name, lastName)
+  return object;
+
 }
 
 /**
@@ -45,5 +52,13 @@ export function fibonacciGenerator (x) {
    * Index: index = 7;
    */
 
+  fibonacciFunction=function*(i){
+    yield fib[i]=fib[i-1] + fib[i-2];
+
+  }
+
+  for(let j=x; j<=7; j++){
+    finalResult =fibonacciFunction(j).next().value;
+  }
   return finalResult;
 }

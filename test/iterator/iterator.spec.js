@@ -1,3 +1,4 @@
+
 import 'babel-polyfill';
 import Assert from 'assert';
 import { iteratorArray, iteratorObject, fibonacciGenerator} from "../../exercises/iterator/iterator";

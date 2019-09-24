@@ -4,9 +4,10 @@
  * This class has a function name scream which takes a scream as param and return a scream
  */
 
-Export Class Animal {
+export class Animal {
      constructor(name, type) {
-
+        this.name = name;
+        this.type = type;
      }
      scream(scream) {
          return scream;

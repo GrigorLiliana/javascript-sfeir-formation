@@ -9,11 +9,11 @@ import { Animal } from "./animal";
 
 class Cat extends Animal {
     constructor(name, type, scream){
-this.name = name;
-this.type = type;
+        super(name, type);
+        this.scream = scream;
     }
 
-    catScream(scream){
-
+    catScream(){
+    return super.scream(this.scream);
     }
 }
