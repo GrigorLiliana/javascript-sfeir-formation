@@ -5,7 +5,7 @@
  * @param {string} name
  * @returns {string}
  */
-const simpleValue = // Write your code here
+const simpleValue = name => name;// Write your code here
 /**
  * @name arrow-function#objectValue
  * @type {function}
@@ -14,7 +14,7 @@ const simpleValue = // Write your code here
  * @param {number} multiplicateur
  * @returns {{doubleFirst: number, doubleSecond: number}}
  */
-const objectValue = // Write your code here
+const objectValue = ({first, second}, multiplicateur) => ({doubleFirst: multiplicateur * first, doubleSecond: multiplicateur*second});// Write your code here
 
 /**
  * @name arrow-function#caseOfThis
@@ -31,7 +31,7 @@ const caseOfThis = (num) => {
     each() {
       num.map((value) => {
         if (value % 2 === 0) {
-          even.push(value);
+          this.even.push(value);
         }
       });
     },
