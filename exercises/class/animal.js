@@ -3,3 +3,12 @@
  * This class have a constructor which take a name and type as param
  * This class has a function name scream which takes a scream as param and return a scream
  */
+
+Export Class Animal {
+     constructor(name, type) {
+
+     }
+     scream(scream) {
+         return scream;
+     }
+ }

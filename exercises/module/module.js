@@ -5,7 +5,7 @@
  */
 
 // Export the variable name and transforme it to a constant as a named export
-let name = 'ES6 <3';
+export const name = 'ES6 <3';
 
 /**
  * @name module#beautifulName
@@ -14,9 +14,10 @@ let name = 'ES6 <3';
  * @param {string} name
  * @returns {string}
  */
-const beautifulName = (name) => {
+export default beautifulName = (name) => {
   return `${name}, you have a beautiful name`;
 };
+
 
 
 /**
