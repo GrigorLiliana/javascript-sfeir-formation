@@ -8,6 +8,11 @@ const promiseResolve = () => {
   /**
    * This function must be return a resolved Promise with the following string value: 'I love ES6' after 500ms
    */
+  return new Promise((resolve, reject) =>{
+    setTimeout(()=>(resolve('I love ES6')),500);
+    });
+
+
 };
 
 /**
@@ -20,6 +25,11 @@ const promiseReject = () => {
   /**
    * This function must be return a rejected Promise with the following string value: 'I hate rejection' after 500ms
    */
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+    reject('I hate rejection');
+    },500);
+    });
 };
 
 /**
@@ -34,6 +44,7 @@ const promiseChained = () => {
    * For that you must add the string 'and SFEIR' after 'promiseResolve' (first exercise) has resolved
    * You must chain the promise for doing this exercise
    */
+  return promiseResolve().then(value =>`${value} and SFEIR`);
 };
 
 export default {
