@@ -1,0 +1,39 @@
+{
+  "name": "es6-200-lux",
+  "version": "0.0.1",
+  "description": "Sferi school ES6 for Luxembourg",
+  "main": "index.js",
+  "scripts": {
+    "test-base": "mocha --require babel-core/register test/base",
+    "test-arrow-function": "mocha --require babel-core/register test/arrow-function",
+    "test-promise": "mocha --require babel-core/register test/promise",
+    "test-module": "mocha --require babel-core/register test/module",
+    "test-class": "mocha --require babel-core/register test/class",
+    "test-iterator": "mocha --require babel-core/register test/iterator",
+    "test-symbol": "mocha --require babel-core/register test/symbol",
+    "test-proxies": "mocha --require babel-core/register test/proxies",
+    "test-async-await": "mocha --require babel-core/register test/async-await"
+  },
+  "babel": {
+    "presets": [
+      "stage-0",
+      "env"
+    ]
+  },
+  "author": "NYO & NFR",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "es6-promise": "^4.2.4",
+    "eslint": "^4.19.1",
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "dependencies": {
+    "mocha": "^5.1.1"
+  }
+}
